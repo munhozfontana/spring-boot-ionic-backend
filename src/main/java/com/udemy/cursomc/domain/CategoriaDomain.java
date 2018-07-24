@@ -7,19 +7,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
-
 @Entity
-public class CategoriaDomain implements Serializable{
+public class CategoriaDomain implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
-	
+
 	public CategoriaDomain() {
-		
+
 	}
 
 	public CategoriaDomain(Integer id, String nome) {
@@ -27,12 +25,10 @@ public class CategoriaDomain implements Serializable{
 		this.id = id;
 		this.nome = nome;
 	}
-	
 
 	public Integer getId() {
 		return id;
 	}
-	
 
 	public void setId(Integer id) {
 		this.id = id;
@@ -70,7 +66,5 @@ public class CategoriaDomain implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
-	
+
 }
