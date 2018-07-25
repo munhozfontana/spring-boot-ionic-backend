@@ -1,0 +1,29 @@
+[33mcommit 7a176303545a88c932d621f4257b2bcf40a59553[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Munhoz <munhozfontana@gmail.com>
+Date:   Tue Jul 24 20:51:48 2018 -0300
+
+    Criando repository e service para Categoria
+
+[33mcommit 2b9c365dac6006914aa1511894a11fe60f0bd4d8[m
+Author: Munhoz <munhozfontana@gmail.com>
+Date:   Tue Jul 24 18:23:26 2018 -0300
+
+    Banco de dados e a criação altomática de dados
+
+[33mcommit 3708216bda5410c8be6f78f5e817b8c7b56d2efb[m
+Author: Munhoz <munhozfontana@gmail.com>
+Date:   Sat Jul 21 21:01:17 2018 -0300
+
+    Testando primeira classe de dominio - Categoria
+
+[33mcommit f07543294db3859da23eaab6e3ad914bd9559944[m
+Author: Munhoz <munhozfontana@gmail.com>
+Date:   Sat Jul 21 20:29:02 2018 -0300
+
+    REST teste
+
+[33mcommit b628f140380e0c6f210c7f38c65c9971c51f1766[m
+Author: Munhoz <munhozfontana@gmail.com>
+Date:   Sat Jul 21 20:02:21 2018 -0300
+
+    Projeto criado
