@@ -2,23 +2,47 @@ package com.udemy.cursomc.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
+
+import com.udemy.cursomc.services.validation.ClienteInsert;
+
+@ClienteInsert
 public class ClienteNewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@NotEmpty(message="Preenchimento obrigatório")
+	@Length(min=5, max=80, message="O tamanho deve ser entre 5 e 80 caracteres")
 	private String nome;
+	
+	@NotEmpty(message="Preenchimento Obrigatório")
+	@Email(message="Email inválido")
 	private String email;
+	
+	@NotEmpty(message="Preenchimento Obrigatório")
 	private String cpfOuCnpj;
+	
 	private Integer tipo;
 	
+	@NotEmpty(message="Preenchimento Obrigatório")
 	private String logradouro;
+	
+	@NotEmpty(message="Preenchimento Obrigatório")
 	private String numero;
+	
 	private String complmento;
+
 	private String bairro;
+
+	@NotEmpty(message="Preenchimento Obrigatório")
 	private String cep;
 	
-	private String teleonfe1;
-	private String teleonfe2;
-	private String teleonfe3;
+	@NotEmpty(message="Preenchimento Obrigatório")
+	private String telefone1;
+	private String telefone2;
+	private String telefone3;
 	
 	private Integer cidadeId;
 	
@@ -99,27 +123,27 @@ public class ClienteNewDTO implements Serializable {
 	}
 
 	public String getTeleonfe1() {
-		return teleonfe1;
+		return telefone1;
 	}
 
-	public void setTeleonfe1(String teleonfe1) {
-		this.teleonfe1 = teleonfe1;
+	public void setTeleonfe1(String telefone1) {
+		this.telefone1 = telefone1;
 	}
 
 	public String getTeleonfe2() {
-		return teleonfe2;
+		return telefone2;
 	}
 
-	public void setTeleonfe2(String teleonfe2) {
-		this.teleonfe2 = teleonfe2;
+	public void setTeleonfe2(String telefone2) {
+		this.telefone2 = telefone2;
 	}
 
 	public String getTeleonfe3() {
-		return teleonfe3;
+		return telefone3;
 	}
 
-	public void setTeleonfe3(String teleonfe3) {
-		this.teleonfe3 = teleonfe3;
+	public void setTeleonfe3(String telefone3) {
+		this.telefone3 = telefone3;
 	}
 
 	public Integer getCidadeId() {
